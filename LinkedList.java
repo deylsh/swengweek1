@@ -29,5 +29,12 @@ public static void main(String args[]) {
     int arr[] = {10, 7, 8, 9, 1, 5}; 
     LinkedList llist = createList(arr); 
     llist.printList();
-} 
+}
+    public void printList(){  
+    Node n = head; 
+    while (n != null){ 
+        System.out.print(n.data+" "); 
+        n = n.next;
+    }
+}
 }
