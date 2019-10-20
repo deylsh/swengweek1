@@ -1,4 +1,4 @@
-//https://www.geeksforgeeks.org/quick-sort/
+d//https://www.geeksforgeeks.org/quick-sort/
 class QuickSort{
     int partition(int arr[], int low, int high){
         int pivot = arr[high];
@@ -21,14 +21,13 @@ class QuickSort{
     }
     void sort(int arr[], int low, int high) {
         //TODO the > sign should be swapped with <
-        if (low > high){
+        if (low <  high){
             int pi = partition(arr, low, high);
 
             sort(arr, low, pi-1);
             sort(arr, pi+1, high);
         }
     }
-
     static void printArray(int arr[]) {
         int n = arr.length;
         for (int i=0; i<n; ++i)
